@@ -6,8 +6,6 @@ const partners = [
   "Hollywoodland Film",
   "Cape Town Film Office",
   "District Six Museum",
-  "Nelson Mandela Foundation",
-  "Pan-African Film Network",
 ];
 
 export default function Sponsors() {
