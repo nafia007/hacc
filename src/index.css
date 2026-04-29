@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 12% 4%;
+    --foreground: 36 33% 93%;
+    --card: 24 16% 9%;
+    --card-foreground: 36 33% 93%;
+    --popover: 24 16% 9%;
+    --popover-foreground: 36 33% 93%;
+    --primary: 43 48% 54%;
+    --primary-foreground: 20 12% 4%;
+    --secondary: 30 12% 15%;
+    --secondary-foreground: 36 33% 93%;
+    --muted: 30 12% 15%;
+    --muted-foreground: 28 9% 50%;
+    --accent: 16 66% 47%;
+    --accent-foreground: 36 33% 93%;
+    --destructive: 16 66% 47%;
+    --destructive-foreground: 36 33% 93%;
+    --border: 43 48% 54% / 0.2;
+    --input: 30 12% 15%;
+    --ring: 43 48% 54%;
+    --radius: 0rem;
+    --sidebar-background: 24 16% 9%;
+    --sidebar-foreground: 36 33% 93%;
+    --sidebar-primary: 43 48% 54%;
+    --sidebar-primary-foreground: 20 12% 4%;
+    --sidebar-accent: 30 12% 15%;
+    --sidebar-accent-foreground: 36 33% 93%;
+    --sidebar-border: 43 48% 54% / 0.2;
+    --sidebar-ring: 43 48% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-deep text-cream;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: rgba(201, 168, 76, 0.3);
+    color: #F2EDE4;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
