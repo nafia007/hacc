@@ -9,16 +9,16 @@ const teamMembers = [
     image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmK9S7nOocrbh0dnEqge8SpIsLY3zQDyj1f24",
   },
   {
+    name: "Bheki Dlaldla",
+    role: "Programmer",
+    bio: "Experienced programmer and technologist supporting HACC’s digital infrastructure and innovation initiatives.",
+    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmkiuAsOocrbh0dnEqge8SpIsLY3zQDyj1f24",
+  },
+  {
     name: "Thandikaya Simelane",
     role: "Programme Curator",
     bio: "Film curator and critic specialising in emerging African cinema. Thandikaya has programmed for festivals across the continent and is passionate about discovering new voices.",
-    image: "/images/team-thandikaya.jpg",
-  },
-  {
-    name: "Olivia Marchetti",
-    role: "Head of Operations",
-    bio: "Event producer with a background in international arts festivals. Olivia ensures every HACC edition runs seamlessly, from venue management to guest experience.",
-    image: "/images/team-olivia.jpg",
+    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmK9S7nOocrbh0dnEqge8SpIsLY3zQDyj1f24",
   },
 ];
 
