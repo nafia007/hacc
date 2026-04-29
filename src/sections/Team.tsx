@@ -15,10 +15,10 @@ const teamMembers = [
     image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmkiuAsOocrbh0dnEqge8SpIsLY3zQDyj1f24",
   },
   {
-    name: "Thandikaya Simelane",
-    role: "Programme Curator",
-    bio: "Film curator and critic specialising in emerging African cinema. Thandikaya has programmed for festivals across the continent and is passionate about discovering new voices.",
-    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmK9S7nOocrbh0dnEqge8SpIsLY3zQDyj1f24",
+    name: "Thandikaya Ncosani",
+    role: "Stakeholder Manager",
+    bio: "Dedicated stakeholder manager fostering partnerships and community engagement for HACC.",
+    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglQWHIJukOyEwbsWVq7c2mI4dtRpJSYvf1KikC",
   },
 ];
 
