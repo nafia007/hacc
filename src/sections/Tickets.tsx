@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const ticketTiers = [
   {
@@ -37,33 +36,9 @@ const ticketTiers = [
   },
 ];
 
-const faqs = [
-  {
-    question: "What is the age policy?",
-    answer:
-      "Most screenings are 16+. Some films may have an 18+ rating — this will be clearly indicated on the film page. Children under 12 are welcome at family-friendly animation screenings when accompanied by an adult.",
-  },
-  {
-    question: "What is the refund policy?",
-    answer:
-      "Tickets are non-refundable but can be transferred to another person up to 48 hours before the event. In the event of a cancellation, full refunds will be issued automatically.",
-  },
-  {
-    question: "Is the venue accessible?",
-    answer:
-      "All HACC venues are wheelchair accessible with ramps, accessible restrooms, and designated seating areas. Please contact us 48 hours in advance if you require specific accommodations.",
-  },
-  {
-    question: "Is parking available?",
-    answer:
-      "Limited street parking is available near the venues. We recommend using Uber or Bolt. A Park & Ride service operates from the V&A Waterfront on all festival days.",
-  },
-];
-
 export default function Tickets() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
     <section
@@ -141,57 +116,8 @@ export default function Tickets() {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* FAQ */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <h3 className="font-display text-xl font-bold text-cream mb-6">
-            Frequently Asked Questions
-          </h3>
-          <div className="border border-gold/10">
-            {faqs.map((faq, i) => (
-              <div
-                key={i}
-                className="border-b border-gold/10 last:border-b-0"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between p-4 lg:p-5 text-left hover:bg-ink/50 transition-colors"
-                >
-                  <span className="font-display text-sm text-cream pr-4">
-                    {faq.question}
-                  </span>
-                  <motion.div
-                    animate={{ rotate: openFaq === i ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex-shrink-0 text-muted"
-                  >
-                    <ChevronDown size={16} />
-                  </motion.div>
-                </button>
-                <AnimatePresence>
-                  {openFaq === i && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="px-4 lg:px-5 pb-4 lg:pb-5 text-cream/70 text-sm leading-relaxed">
-                        {faq.answer}
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );
 }
+
