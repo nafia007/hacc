@@ -18,12 +18,20 @@ export default function Sponsors() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-gold mb-4">
-            Coming Soon
-          </p>
-          <h3 className="font-display text-2xl lg:text-3xl font-bold text-cream">
+          <h3 className="font-display text-2xl lg:text-3xl font-bold text-cream mb-6">
             Partnership Opportunities
           </h3>
+          <p className="text-muted text-sm max-w-md mx-auto mb-8 leading-relaxed">
+            Interested in partnering with HACC? We welcome collaborations with brands, organizations, and institutions that share our vision for African cinema and emerging technology.
+          </p>
+          <a
+            href="https://form.jotform.com/260992508874067"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+          >
+            Become a Partner
+          </a>
         </motion.div>
       </div>
     </section>
