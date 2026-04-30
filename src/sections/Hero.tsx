@@ -101,25 +101,19 @@ export default function Hero() {
               emerging technology, and global storytelling.
             </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
-              className="mt-8 flex flex-wrap gap-4"
-            >
-              <a
-                href="#tickets"
-                className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                className="mt-8"
               >
-                Get Tickets
-              </a>
-              <a
-                href="#films"
-                className="px-8 py-3 border border-gold/20 text-cream font-mono text-xs tracking-[0.15em] uppercase hover:border-gold transition-all duration-300"
-              >
-                Browse Films
-              </a>
-            </motion.div>
+                <a
+                  href="#tickets"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  Get Tickets
+                </a>
+              </motion.div>
           </div>
 
           {/* Right: Countdown */}
