@@ -41,23 +41,23 @@ export default function Submit() {
              animate={isInView ? { opacity: 1, y: 0 } : {}}
              transition={{ duration: 0.6 }}
            >
-              <div className="flex flex-col items-center mb-4">
+              <div className="mb-4">
                 <img 
                   src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglKKCcWcqTcHNzG3mksEIFDuUihCbaRL60rxoW" 
                   alt="HACC Logo" 
-                  className="h-[48px] w-auto mb-3"
+                  className="h-[48px] w-auto"
                 />
-                <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-gold mb-3">
-                  06 — Submit a Film
-                </p>
-                <h2
-                  className="font-display font-bold text-cream leading-[1.2] mb-5 text-center"
-                  style={{ fontSize: "clamp(1.75rem, 5vw, 2.5rem)" }}
-                >
-                  Share your <em className="text-gold italic">story</em> with the
-                  world
-                </h2>
               </div>
+              <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-gold mb-3">
+                06 — Submit a Film
+              </p>
+              <h2
+                className="font-display font-bold text-cream leading-[1.2] mb-5"
+                style={{ fontSize: "clamp(1.75rem, 5vw, 2.5rem)" }}
+              >
+                Share your <em className="text-gold italic">story</em> with the
+                world
+              </h2>
 
              <p className="text-cream/80 text-base leading-relaxed mb-6">
                HACC programmers seek bold, original voices telling stories at the
