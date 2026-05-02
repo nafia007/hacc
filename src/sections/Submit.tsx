@@ -36,21 +36,28 @@ export default function Submit() {
        <div className="max-w-[1200px] mx-auto px-4 lg:px-8">
          <div className="grid lg:grid-cols-[1fr_1fr] gap-8 lg:gap-12">
           {/* Left: Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
-             <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-gold mb-3">
-               06 — Submit a Film
-             </p>
-             <h2
-               className="font-display font-bold text-cream leading-[1.2] mb-5"
-               style={{ fontSize: "clamp(1.75rem, 5vw, 2.5rem)" }}
-             >
-               Share your <em className="text-gold italic">story</em> with the
-               world
-             </h2>
+           <motion.div
+             initial={{ opacity: 0, y: 30 }}
+             animate={isInView ? { opacity: 1, y: 0 } : {}}
+             transition={{ duration: 0.6 }}
+           >
+              <div className="flex flex-col items-center mb-4">
+                <img 
+                  src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglKKCcWcqTcHNzG3mksEIFDuUihCbaRL60rxoW" 
+                  alt="HACC Logo" 
+                  className="h-[48px] w-auto mb-3"
+                />
+                <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-gold mb-3">
+                  06 — Submit a Film
+                </p>
+                <h2
+                  className="font-display font-bold text-cream leading-[1.2] mb-5 text-center"
+                  style={{ fontSize: "clamp(1.75rem, 5vw, 2.5rem)" }}
+                >
+                  Share your <em className="text-gold italic">story</em> with the
+                  world
+                </h2>
+              </div>
 
              <p className="text-cream/80 text-base leading-relaxed mb-6">
                HACC programmers seek bold, original voices telling stories at the
