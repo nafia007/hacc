@@ -6,14 +6,15 @@ const navLinks = [
   { label: "Programme", href: "#programme" },
   { label: "Tickets", href: "#tickets" },
   { label: "Submit", href: "#submit" },
-  { label: "Contact", href: "mailto:info@haccfilm.com" },
+  { label: "Contact", href: "mailto:info@holocenefilms.xyz" },
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: "#" },
-  { label: "Twitter / X", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "https://instagram.com/haccfilm" },
+  { label: "Twitter / X", href: "https://twitter.com/haccfilm" },
+  { label: "YouTube", href: "https://youtube.com/@haccfilm" },
+  { label: "LinkedIn", href: "https://linkedin.com/company/haccfilm" },
+  { label: "Newsletter", href: "mailto:info@holocenefilms.xyz" },
 ];
 
 export default function Footer() {
@@ -90,18 +91,21 @@ export default function Footer() {
               <p className="text-muted text-sm mb-4">
                 Get festival updates and early bird ticket alerts.
               </p>
-              <div className="flex">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email"
-                  className="flex-1 px-4 py-2.5 bg-ink border border-gold/20 text-cream text-sm placeholder:text-muted/50 focus:border-gold focus:outline-none transition-colors"
-                />
-                <button className="px-4 py-2.5 bg-gold text-deep font-mono text-[10px] tracking-wider uppercase hover:bg-gold-light transition-colors">
-                  Subscribe
-                </button>
-              </div>
+<div className="flex">
+                 <input
+                   type="email"
+                   value={email}
+                   onChange={(e) => setEmail(e.target.value)}
+                   placeholder="Your email"
+                   className="flex-1 px-4 py-2.5 bg-ink border border-gold/20 text-cream text-sm placeholder:text-muted/50 focus:border-gold focus:outline-none transition-colors"
+                 />
+                 <a
+                   href="mailto:info@holocenefilms.xyz?subject=HACC Newsletter Signup&body=Please add me to the HACC newsletter."
+                   className="px-4 py-2.5 bg-gold text-deep font-mono text-[10px] tracking-wider uppercase hover:bg-gold-light transition-colors inline-flex items-center justify-center"
+                 >
+                   Subscribe
+                 </a>
+               </div>
             </div>
           </div>
 
