@@ -1,43 +1,5 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-interface StatProps {
-  target: number;
-  suffix: string;
-  label: string;
-}
-
-function AnimatedStat({ target, suffix, label }: StatProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    if (!isInView) return;
-    const duration = 1500;
-    const startTime = Date.now();
-    const animate = () => {
-      const elapsed = Date.now() - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      setValue(Math.floor(eased * target));
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
-  }, [isInView, target]);
-
-  return (
-    <div ref={ref} className="text-center lg:text-left">
-      <span className="font-display text-4xl lg:text-5xl text-gold font-bold">
-        {value}
-        {suffix}
-      </span>
-      <p className="font-mono text-[11px] tracking-[0.12em] text-muted mt-2 uppercase">
-        {label}
-      </p>
-    </div>
-  );
-}
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -73,7 +35,7 @@ export default function About() {
             </h2>
           </motion.div>
 
-          {/* Right: Description + Stats */}
+          {/* Right: Description */}
           <div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -98,21 +60,6 @@ export default function About() {
               diaspora, HACC is where stories find their audience and
               filmmakers find their community.
             </motion.p>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-3 gap-6 pt-8"
-              style={{
-                borderTop: "1px solid rgba(201,168,76,0.15)",
-              }}
-            >
-              <AnimatedStat target={100} suffix="+" label="Films" />
-              <AnimatedStat target={25} suffix="+" label="Countries" />
-              <AnimatedStat target={3} suffix="rd" label="Edition" />
-            </motion.div>
           </div>
         </div>
       </div>
