@@ -96,7 +96,7 @@ export default function Submit() {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <a
-                  href="https://filmfreeway.com"
+                  href="https://filmfreeway.com/HACC"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto px-6 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
