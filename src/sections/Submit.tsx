@@ -9,7 +9,7 @@ const categories = [
 ];
 
 const criteria = [
-  "Films must be directed by filmmakers of African or Asian descent",
+  "Films must be directed by filmmakers of African, Middle Eastern or Asian descent",
   "Completed after January 2024",
   "English subtitles required for non-English dialogue",
   "No prior Cape Town theatrical release",
