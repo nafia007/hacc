@@ -44,8 +44,8 @@ export default function About() {
               className="text-cream/80 leading-relaxed mb-4"
             >
               The Hollywood African Cinema Connection is Cape Town&apos;s
-              festival at the intersection of African and Asian cinema,
-              emerging technology, and global storytelling. Now entering its
+              festival at the intersection of African, Middle Eastern and Asian
+              cinema, emerging technology, and global storytelling. Now entering its
               third edition, HACC features curated feature films, short films,
               animation, panel discussions on blockchain and AI, and its
               flagship sub-event Women on Chain.

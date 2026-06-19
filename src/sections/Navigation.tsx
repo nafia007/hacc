@@ -48,14 +48,7 @@ export default function Navigation() {
         }`}
         style={{ height: 64 }}
       >
-        <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-6 lg:px-8">
-          <a
-            href="#"
-            className="font-mono text-gold text-sm tracking-[0.15em] uppercase font-medium"
-          >
-            HACC
-          </a>
-
+        <div className="max-w-[1200px] mx-auto h-full flex items-center justify-end px-6 lg:px-8">
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useCountdown } from "@/hooks/useCountdown";
 
 export default function Hero() {
-  const festivalDate = new Date("2026-10-15T18:00:00");
+  const festivalDate = new Date("2026-10-30T18:00:00");
   const { days, hours, minutes, seconds } = useCountdown(festivalDate);
   const grainRef = useRef<HTMLDivElement>(null);
 
@@ -73,9 +73,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-mono text-[11px] tracking-[0.2em] uppercase text-gold mb-6"
+              className="font-mono text-base sm:text-lg font-black tracking-[0.12em] uppercase text-gold mb-6"
             >
-              Third Edition · October 2026
+              Third Edition · 30th October to{" "}
+              <span className="whitespace-nowrap">2nd November 2026</span>
             </motion.p>
 
             <motion.h1
@@ -97,7 +98,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="mt-6 text-lg lg:text-xl text-muted max-w-[520px] leading-relaxed"
             >
-              Cape Town&apos;s festival at the intersection of African cinema,
+              Cape Town&apos;s festival at the intersection of African, Middle Eastern and Asian cinema,
               emerging technology, and global storytelling.
             </motion.p>
 
