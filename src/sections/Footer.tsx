@@ -1,7 +1,5 @@
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Films", href: "#films" },
-  { label: "Programme", href: "#programme" },
   { label: "Tickets", href: "#tickets" },
   { label: "Submit", href: "#submit" },
   { label: "Contact", href: "mailto:info@holocenefilms.xyz" },
@@ -48,29 +46,6 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="lg:mt-0">
-            <p className="font-mono text-[10px] tracking-[0.15em] text-gold uppercase mb-4">
-              Newsletter
-            </p>
-            <p className="text-muted text-sm mb-4">
-              Get festival updates and early bird ticket alerts.
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2.5 bg-ink border border-gold/20 text-cream text-sm placeholder:text-muted/50 focus:border-gold focus:outline-none transition-colors"
-              />
-              <a
-                href="mailto:info@holocenefilms.xyz?subject=HACC Newsletter Signup&body=Please add me to the HACC newsletter."
-                className="px-4 py-2.5 bg-gold text-deep font-mono text-[10px] tracking-wider uppercase hover:bg-gold-light transition-colors inline-flex items-center justify-center"
-              >
-                Subscribe
-              </a>
-            </div>
           </div>
         </div>
 

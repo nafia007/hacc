@@ -9,7 +9,7 @@ const ticketTiers = [
     features: ["Early bird pricing", "Red carpet entry", "Opening film premiere", "After party access"],
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "OPENING-NIGHT-EB",
+    reference: "EBOPENING",
   },
   {
     name: "Full Weekend Pass",
@@ -23,7 +23,7 @@ const ticketTiers = [
     ],
     popular: true,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "WEEKEND-PASS",
+    reference: "EBWEEKEND",
   },
   {
     name: "Awards Night",
@@ -32,7 +32,7 @@ const ticketTiers = [
     features: ["Awards ceremony", "Gala reception", "Meet the winners"],
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "AWARDS-NIGHT",
+    reference: "EBAWARDS",
   },
 ];
 
@@ -64,6 +64,9 @@ export default function Tickets() {
           >
             Secure your <em className="text-gold italic">seat</em>
           </h2>
+          <p className="text-muted text-sm mt-2">
+            Secure your seat at an early bird rate valid until 30th June
+          </p>
         </motion.div>
 
         {/* Ticket Tiers */}
@@ -93,10 +96,13 @@ export default function Tickets() {
               <p className="font-mono text-[11px] tracking-[0.12em] text-gold uppercase mb-3">
                 {tier.name}
               </p>
-              <p className="font-display text-3xl lg:text-4xl text-cream font-bold mb-2">
-                R{tier.price}
-              </p>
-              <p className="text-muted text-sm mb-4">{tier.description}</p>
+               <p className="font-display text-3xl lg:text-4xl text-cream font-bold mb-1">
+                 R{tier.price}
+               </p>
+               <p className="font-mono text-[10px] tracking-[0.15em] text-gold uppercase mb-2">
+                 {tier.reference}
+               </p>
+               <p className="text-muted text-sm mb-4">{tier.description}</p>
               <ul className="space-y-2 mb-6">
                 {tier.features.map((feature) => (
                   <li
