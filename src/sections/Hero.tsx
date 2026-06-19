@@ -75,8 +75,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="font-mono text-base sm:text-lg font-black tracking-[0.12em] uppercase text-gold mb-6"
             >
-              Third Edition · 30th October to{" "}
-              <span className="whitespace-nowrap">2nd November 2026</span>
+              Third Edition · 30th October<span className="sm:hidden"><br />to 2nd November 2026</span><span className="hidden sm:inline"> to 2nd November 2026</span>
             </motion.p>
 
             <motion.h1
