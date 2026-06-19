@@ -30,8 +30,8 @@ export default function About() {
               className="font-display font-bold text-cream leading-[1.1]"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
             >
-              Where African cinema{" "}
-              <em className="text-gold italic">meets</em> the future
+              Where <span className="text-gold italic">Global South Cinema</span>{" "}
+              meets the future
             </h2>
           </motion.div>
 
