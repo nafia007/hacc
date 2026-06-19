@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useCountdown } from "@/hooks/useCountdown";
 
 export default function Hero() {
-  const festivalDate = new Date("2026-10-30T18:00:00");
+  const festivalDate = new Date("2026-10-30T20:00:00+02:00");
   const { days, hours, minutes, seconds } = useCountdown(festivalDate);
   const grainRef = useRef<HTMLDivElement>(null);
 
