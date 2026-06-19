@@ -6,7 +6,7 @@ const teamMembers = [
     name: "Weaam Williams",
     role: "Festival Director",
     bio: "Award-winning filmmaker and cultural producer with over 15 years of experience in African cinema. Weaam founded HACC to bridge the gap between African storytellers and global audiences.",
-    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglmK9S7nOocrbh0dnEqge8SpIsLY3zQDyj1f24",
+    image: "https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglPE1j74siPrc4vbSwU7xqGXOkdN5lfysuYpji",
   },
   {
     name: "Bheki Dlaldla",
