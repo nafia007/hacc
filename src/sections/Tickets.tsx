@@ -34,6 +34,15 @@ const ticketTiers = [
     paymentLink: "https://page.peachpayments.com/holocene-films",
     reference: "EBAWARDS",
   },
+  {
+    name: "VIP Access Pass",
+    price: "2000",
+    description: "All-access VIP pass",
+    features: ["Opening Night", "Weekend Access", "Awards Night", "Private events"],
+    popular: false,
+    paymentLink: "https://page.peachpayments.com/holocene-films",
+    reference: "VIP-ACCESS",
+  },
 ];
 
 export default function Tickets() {
@@ -74,7 +83,7 @@ export default function Tickets() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-1 mb-16"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-1 mb-16"
         >
           {ticketTiers.map((tier, i) => (
             <motion.div
@@ -99,7 +108,10 @@ export default function Tickets() {
                <p className="font-display text-3xl lg:text-4xl text-cream font-bold mb-1">
                  R{tier.price}
                </p>
-               <p className="font-mono text-[10px] tracking-[0.15em] text-gold uppercase mb-2">
+               <p className="font-mono text-xs font-bold tracking-[0.15em] text-gold uppercase mb-1">
+                 Payment Reference Code
+               </p>
+               <p className="font-mono text-sm font-bold tracking-[0.12em] text-cream mb-4">
                  {tier.reference}
                </p>
                <p className="text-muted text-sm mb-4">{tier.description}</p>
