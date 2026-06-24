@@ -5,6 +5,7 @@ import Tickets from "@/sections/Tickets";
 import Submit from "@/sections/Submit";
 import Team from "@/sections/Team";
 import Sponsors from "@/sections/Sponsors";
+import SaudiDelegation from "@/sections/SaudiDelegation";
 import Footer from "@/sections/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Submit />
         <Team />
         <Sponsors />
+        <SaudiDelegation />
       </main>
       <Footer />
     </div>
