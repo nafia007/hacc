@@ -46,7 +46,7 @@ export default function Navigation() {
             ? "bg-deep/90 backdrop-blur-xl border-b border-gold/10"
             : "bg-transparent"
         }`}
-        style={{ height: 80 }}
+        style={{ height: 100 }}
       >
         <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-6 lg:px-8">
           {/* Logo */}
@@ -54,7 +54,7 @@ export default function Navigation() {
             <img
               src="/hacc-logo.png"
               alt="HACC"
-              className="h-[56px] w-auto"
+              className="h-[70px] w-auto"
             />
           </a>
 
@@ -119,7 +119,7 @@ export default function Navigation() {
               <img
                 src="/hacc-logo.png"
                 alt="HACC"
-                className="h-[48px] w-auto"
+                className="h-[60px] w-auto"
               />
               <button
                 onClick={() => setIsMobileOpen(false)}
