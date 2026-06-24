@@ -46,9 +46,18 @@ export default function Navigation() {
             ? "bg-deep/90 backdrop-blur-xl border-b border-gold/10"
             : "bg-transparent"
         }`}
-        style={{ height: 64 }}
+        style={{ height: 80 }}
       >
-        <div className="max-w-[1200px] mx-auto h-full flex items-center justify-end px-6 lg:px-8">
+        <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-6 lg:px-8">
+          {/* Logo */}
+          <a href="#hero" className="hidden lg:flex items-center flex-shrink-0">
+            <img
+              src="/hacc-logo.png"
+              alt="HACC"
+              className="h-[48px] w-auto"
+            />
+          </a>
+
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
@@ -104,31 +113,48 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed inset-0 z-40 bg-warmgray flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-40 bg-warmgray flex flex-col"
           >
-            {navLinks.map((link, i) => (
+            <div className="flex items-center justify-between px-6 pt-4">
+              <img
+                src="/hacc-logo.png"
+                alt="HACC"
+                className="h-[40px] w-auto"
+              />
+              <button
+                onClick={() => setIsMobileOpen(false)}
+                className="relative p-2"
+                aria-label="Close menu"
+              >
+                <span className="block w-6 h-px bg-gold rotate-45 absolute" />
+                <span className="block w-6 h-px bg-gold -rotate-45 absolute" />
+              </button>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-8 flex-1">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  initial={{ x: 20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.08, duration: 0.3 }}
+                  className="font-display text-3xl text-cream hover:text-gold transition-colors duration-300"
+                >
+                  {link.label}
+                </motion.a>
+              ))}
               <motion.a
-                key={link.href}
-                href={link.href}
+                href="#tickets"
                 onClick={handleLinkClick}
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: i * 0.08, duration: 0.3 }}
-                className="font-display text-3xl text-cream hover:text-gold transition-colors duration-300"
+                transition={{ delay: navLinks.length * 0.08, duration: 0.3 }}
+                className="mt-4 px-8 py-3 bg-gold text-deep font-mono text-sm tracking-wider uppercase"
               >
-                {link.label}
+                Get Tickets
               </motion.a>
-            ))}
-            <motion.a
-              href="#tickets"
-              onClick={handleLinkClick}
-              initial={{ x: 20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: navLinks.length * 0.08, duration: 0.3 }}
-              className="mt-4 px-8 py-3 bg-gold text-deep font-mono text-sm tracking-wider uppercase"
-            >
-              Get Tickets
-            </motion.a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
