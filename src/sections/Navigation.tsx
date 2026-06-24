@@ -50,11 +50,11 @@ export default function Navigation() {
       >
         <div className="max-w-[1200px] mx-auto h-full flex items-center justify-between px-6 lg:px-8">
           {/* Logo */}
-          <a href="#hero" className="hidden lg:flex items-center flex-shrink-0">
+          <a href="#hero" className="hidden lg:flex items-center flex-shrink-0 bg-transparent">
             <img
               src="/hacc-logo.png"
               alt="HACC"
-              className="h-[115px] w-auto"
+              className="h-[115px] w-auto bg-transparent"
             />
           </a>
 
@@ -119,7 +119,7 @@ export default function Navigation() {
               <img
                 src="/hacc-logo.png"
                 alt="HACC"
-                className="h-[100px] w-auto"
+                className="h-[100px] w-auto bg-transparent"
               />
               <button
                 onClick={() => setIsMobileOpen(false)}
