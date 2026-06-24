@@ -65,7 +65,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1200px] mx-auto w-full px-6 lg:px-8 pb-20 lg:pb-28">
+      <div className="relative z-10 max-w-[1200px] mx-auto w-full px-6 lg:px-8 pt-20 lg:pt-24 pb-20 lg:pb-28">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12">
           {/* Left: Text */}
           <div className="max-w-2xl">

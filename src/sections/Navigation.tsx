@@ -54,7 +54,7 @@ export default function Navigation() {
             <img
               src="/hacc-logo.png"
               alt="HACC"
-              className="h-[48px] w-auto"
+              className="h-[56px] w-auto"
             />
           </a>
 
@@ -119,7 +119,7 @@ export default function Navigation() {
               <img
                 src="/hacc-logo.png"
                 alt="HACC"
-                className="h-[40px] w-auto"
+                className="h-[48px] w-auto"
               />
               <button
                 onClick={() => setIsMobileOpen(false)}
