@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand with Logo */}
           <div className="flex flex-col items-start lg:mb-0">
             <img
-              src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglKKCcWcqTcHNzG3mksEIFDuUihCbaRL60rxoW"
+              src="/hacc-logo.png"
               alt="HACC Logo"
               className="h-[40px] w-auto mb-2"
             />
