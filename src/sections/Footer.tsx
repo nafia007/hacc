@@ -16,7 +16,7 @@ export default function Footer() {
             <img
               src="/hacc-logo.png"
               alt="HACC Logo"
-              className="h-[84px] w-auto mb-2"
+              className="h-[100px] w-auto mb-2"
             />
             <p className="font-mono text-gold text-sm tracking-[0.15em] uppercase font-medium mb-1">
               HACC
