@@ -3,17 +3,17 @@ import { motion, useInView } from "framer-motion";
 
 const ticketTiers = [
   {
-    name: "Early Bird Opening Night",
-    price: "300",
+    name: "Opening Night",
+    price: "350",
     description: "Opening night film screening & after party access",
-    features: ["Early bird pricing", "Red carpet entry", "Opening film premiere", "After party access"],
+    features: ["Red carpet entry", "Opening film premiere", "After party access"],
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "EBOPENING",
+    reference: "OPENING2026",
   },
   {
-    name: "Full Weekend Pass",
-    price: "800",
+    name: "Weekend Pass",
+    price: "900",
     description: "Festival full weekend pass including opening night",
     features: [
       "All screenings",
@@ -23,25 +23,25 @@ const ticketTiers = [
     ],
     popular: true,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "EBWEEKEND",
+    reference: "WEEKEND2026",
   },
   {
     name: "Awards Night",
-    price: "300",
+    price: "350",
     description: "Gala awards night ceremony and reception",
     features: ["Awards ceremony", "Gala reception", "Meet the winners"],
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "EBAWARDS",
+    reference: "AWARDS2026",
   },
   {
     name: "VIP Access Pass",
-    price: "2000",
+    price: "2200",
     description: "All-access VIP pass",
     features: ["Opening Night", "Weekend Access", "Awards Night", "Private events"],
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
-    reference: "VIP-ACCESS",
+    reference: "VIP-ACCESS2026",
   },
 ];
 
@@ -73,9 +73,9 @@ export default function Tickets() {
           >
             Secure your <em className="text-gold italic">seat</em>
           </h2>
-          <p className="text-muted text-sm mt-2">
-            Secure your seat at an early bird rate valid until 30th June
-          </p>
+<p className="text-muted text-sm mt-2">
+               Pricing valid until 30th June
+             </p>
         </motion.div>
 
         {/* Ticket Tiers */}
