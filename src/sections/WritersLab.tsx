@@ -25,12 +25,12 @@ export default function WritersLab() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-[18px] tracking-[0.2em] uppercase text-gold mb-3">
+          <p className="font-mono text-[9px] tracking-[0.2em] uppercase text-gold mb-3">
             07 — Origin Writers Lab
           </p>
           <h2
             className="font-display font-bold text-cream leading-[1.2] mb-5"
-            style={{ fontSize: "clamp(3.5rem, 10vw, 5rem)" }}
+            style={{ fontSize: "clamp(1.75rem, 5vw, 2.5rem)" }}
           >
             Introducing the <em className="text-gold italic">Origin Writers Lab</em> — now open for
             applications
@@ -87,10 +87,6 @@ export default function WritersLab() {
               draft.
             </p>
             <ul className="mt-4 space-y-1">
-              <li className="text-cream/70 text-[15px] flex items-start gap-1.5">
-                <span className="text-gold text-[11px] mt-0.5">—</span>
-                who will take your current draft to the final draft
-              </li>
               <li className="text-cream/70 text-[15px] flex items-start gap-1.5">
                 <span className="text-gold text-[11px] mt-0.5">—</span>
                 Your script will be included in the African Film DAO&apos;s first slate of
