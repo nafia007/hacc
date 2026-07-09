@@ -70,6 +70,12 @@ export default function Navigation() {
                 <span className="absolute bottom-0 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+            <a
+              href="#writers-lab"
+              className="px-4 py-2 bg-gold text-deep font-mono text-xs tracking-[0.12em] uppercase hover:bg-cream transition-all duration-300"
+            >
+              Origin Writers Lab
+            </a>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -145,11 +151,21 @@ export default function Navigation() {
                 </motion.a>
               ))}
               <motion.a
-                href="#tickets"
+                href="#writers-lab"
                 onClick={handleLinkClick}
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: navLinks.length * 0.08, duration: 0.3 }}
+                className="mt-4 px-8 py-3 border border-gold text-gold font-mono text-sm tracking-wider uppercase"
+              >
+                Origin Writers Lab
+              </motion.a>
+              <motion.a
+                href="#tickets"
+                onClick={handleLinkClick}
+                initial={{ x: 20, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: (navLinks.length + 1) * 0.08, duration: 0.3 }}
                 className="mt-4 px-8 py-3 bg-gold text-deep font-mono text-sm tracking-wider uppercase"
               >
                 Get Tickets
