@@ -75,7 +75,7 @@ export default function SaudiDelegation() {
                 our short expression of interest form — spaces are limited.
               </p>
               <p className="font-mono text-xs tracking-[0.12em] text-gold mb-6">
-                Submissions close: 15th July 2026
+                Submissions close: 30th July 2026
               </p>
               <a
                 href="https://form.jotform.com/261741725598064"
