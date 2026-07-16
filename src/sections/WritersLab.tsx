@@ -37,7 +37,7 @@ export default function WritersLab() {
           </h2>
 
           <p className="text-cream/80 text-base leading-relaxed mb-5">
-            We&apos;re selecting 6 screenwriters from across sub-Saharan Africa for an 8 week
+            We&apos;re selecting 6 screenwriters from across Africa for an 8 week
             intensive development programme, taking each project from draft to final draft.
           </p>
 
@@ -53,7 +53,7 @@ export default function WritersLab() {
               Who we&apos;re looking for
             </p>
             <p className="text-cream/70 text-[15px] leading-relaxed">
-              Screenwriters based in sub-Saharan Africa with a completed draft script for a feature
+              Screenwriters based in Africa with a completed draft script for a feature
               or series.
             </p>
           </div>
@@ -140,7 +140,7 @@ export default function WritersLab() {
                 <p className="font-mono text-[18px] tracking-[0.15em] text-gold uppercase mb-1">
                   Region
                 </p>
-                <p className="font-display text-cream text-xl">Sub-Saharan Africa</p>
+                <p className="font-display text-cream text-xl">Africa</p>
               </div>
             </div>
 
