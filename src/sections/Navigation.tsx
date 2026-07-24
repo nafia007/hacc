@@ -144,12 +144,12 @@ export default function Navigation() {
                   {link.label}
                 </motion.a>
               ))}
-            </div>
+              <motion.a
                 href="#tickets"
                 onClick={handleLinkClick}
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: (navLinks.length + 1) * 0.08, duration: 0.3 }}
+                transition={{ delay: navLinks.length * 0.08, duration: 0.3 }}
                 className="mt-4 px-8 py-3 bg-gold text-deep font-mono text-sm tracking-wider uppercase"
               >
                 Get Tickets
