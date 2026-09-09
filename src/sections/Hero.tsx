@@ -105,13 +105,37 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
-                className="mt-8"
+                className="mt-8 flex flex-wrap gap-4"
               >
                 <a
                   href="#tickets"
                   className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
                 >
                   Get Tickets
+                </a>
+                <a
+                  href="https://gamma.app/docs/HACC-Film-Festival-2026-uyce01aj46nrlmt?mode=present#card-pfswnmpaj2xvk01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  HACC Features
+                </a>
+                <a
+                  href="https://gamma.app/docs/Selected-Short-Films-nfoc0957sbv9b9d?mode=present#card-nl9ys6bwncpercz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  HACC Shorts
+                </a>
+                <a
+                  href="https://gamma.app/docs/HACC-Film-Festival-2026-da5gnwyz6r6en99?mode=present#card-l5ann5svb7ywcsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  HACC Programme
                 </a>
               </motion.div>
           </div>
