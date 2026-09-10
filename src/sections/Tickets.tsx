@@ -58,7 +58,7 @@ const ticketTiers = [
     description: "General admission film ticket",
     features: ["Book from the film programme"],
     popular: false,
-    paymentLink: "https://page.peachpayments.com/holocene-films",
+    paymentLink: "https://form.jotform.com/262506457020046",
     reference: "STANDARD2026",
   },
 ];
