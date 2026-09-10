@@ -56,10 +56,9 @@ const ticketTiers = [
     name: "Standard Film Ticket",
     price: "150",
     description: "General admission film ticket",
-    features: ["Book from the film programme"],
+    features: [],
     popular: false,
     paymentLink: "https://form.jotform.com/262506457020046",
-    reference: "STANDARD2026",
   },
 ];
 
@@ -126,12 +125,16 @@ export default function Tickets() {
                <p className="font-display text-3xl lg:text-4xl text-cream font-bold mb-1">
                  R{tier.price}
                </p>
-               <p className="font-mono text-xs font-bold tracking-[0.15em] text-gold uppercase mb-1">
-                 Payment Reference Code
-               </p>
-               <p className="font-mono text-sm font-bold tracking-[0.12em] text-cream mb-4">
-                 {tier.reference}
-               </p>
+                {tier.reference && (
+                  <>
+                    <p className="font-mono text-xs font-bold tracking-[0.15em] text-gold uppercase mb-1">
+                      Payment Reference Code
+                    </p>
+                    <p className="font-mono text-sm font-bold tracking-[0.12em] text-cream mb-4">
+                      {tier.reference}
+                    </p>
+                  </>
+                )}
                <p className="text-muted text-sm mb-4">{tier.description}</p>
               <ul className="space-y-2 mb-6">
                 {tier.features.map((feature) => (
