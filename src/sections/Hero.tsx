@@ -111,7 +111,7 @@ export default function Hero() {
                   href="#tickets"
                   className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
                 >
-                  Get Tickets
+                  Get Access Pass
                 </a>
                 <a
                   href="https://gamma.app/docs/HACC-Film-Festival-2026-uyce01aj46nrlmt?mode=present#card-pfswnmpaj2xvk01"

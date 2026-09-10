@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Tickets", href: "#tickets" },
+  { label: "Access Pass", href: "#tickets" },
   { label: "About", href: "#about" },
 ];
 
@@ -150,7 +150,7 @@ export default function Navigation() {
                 transition={{ delay: navLinks.length * 0.08, duration: 0.3 }}
                 className="mt-4 px-8 py-3 bg-gold text-deep font-mono text-sm tracking-wider uppercase"
               >
-                Get Tickets
+                Get Access Pass
               </motion.a>
             </div>
           </motion.div>
