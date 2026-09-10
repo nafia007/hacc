@@ -150,7 +150,7 @@ export default function Tickets() {
               <a href={tier.paymentLink} target="_blank" rel="noopener noreferrer" className={`block text-center px-6 py-3 font-mono text-xs tracking-[0.12em] uppercase border transition-all duration-300 ${
       tier.popular ? "bg-gold text-deep border-gold hover:bg-gold-light" : "border-gold/30 text-gold hover:bg-gold hover:text-deep"
     }`}>
-  Pay Now
+  Book Now
 </a>
             </motion.div>
           ))}
