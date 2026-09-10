@@ -12,6 +12,15 @@ const ticketTiers = [
     reference: "OPENING2026",
   },
   {
+    name: "Opening Film",
+    price: "200",
+    description: "Opening film screening",
+    features: ["Red carpet entry", "Opening film premiere"],
+    popular: false,
+    paymentLink: "https://page.peachpayments.com/holocene-films",
+    reference: "OPENFILM2026",
+  },
+  {
     name: "Weekend Pass",
     price: "900",
     description: "Festival full weekend pass including opening night",
@@ -42,6 +51,15 @@ const ticketTiers = [
     popular: false,
     paymentLink: "https://page.peachpayments.com/holocene-films",
     reference: "VIP-ACCESS2026",
+  },
+  {
+    name: "Standard Film Ticket",
+    price: "150",
+    description: "General admission film ticket",
+    features: ["Book from the film programme"],
+    popular: false,
+    paymentLink: "https://page.peachpayments.com/holocene-films",
+    reference: "STANDARD2026",
   },
 ];
 
