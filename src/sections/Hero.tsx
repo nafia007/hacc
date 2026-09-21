@@ -137,6 +137,14 @@ export default function Hero() {
                 >
                   HACC Programme
                 </a>
+                <a
+                  href="https://www.jotform.com/262632212299053"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  Media
+                </a>
               </motion.div>
           </div>
 
