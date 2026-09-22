@@ -145,6 +145,14 @@ export default function Hero() {
                 >
                   Media
                 </a>
+                <a
+                  href="https://gamma.app/docs/Screenwriting-Masterclass-5rz4plzjsc0mvj0?mode=present"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 border border-gold text-gold font-mono text-xs tracking-[0.15em] uppercase hover:bg-gold hover:text-deep transition-all duration-300"
+                >
+                  Masterclasses
+                </a>
               </motion.div>
           </div>
 
