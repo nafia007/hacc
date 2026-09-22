@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Access Pass", href: "#tickets" },
   { label: "About", href: "#about" },
-  { label: "Masterclasses", href: "https://gamma.app/docs/Screenwriting-Masterclass-5rz4plzjsc0mvj0?mode=doc" },
+  { label: "Masterclasses", href: "https://gamma.app/docs/Screenwriting-Masterclass-5rz4plzjsc0mvj0?mode=present", external: true },
 ];
 
 export default function Navigation() {
@@ -63,6 +63,8 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="font-mono text-xs tracking-[0.12em] uppercase text-cream/70 hover:text-gold transition-colors duration-300 relative group"
               >
                 {link.label}
@@ -134,7 +136,9 @@ export default function Navigation() {
                 <motion.a
                   key={link.href}
                   href={link.href}
-                  onClick={handleLinkClick}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
+                  onClick={link.external ? undefined : handleLinkClick}
                   initial={{ x: 20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: i * 0.08, duration: 0.3 }}
