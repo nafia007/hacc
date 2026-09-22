@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { label: "Access Pass", href: "#tickets" },
   { label: "About", href: "#about" },
+  { label: "Masterclasses", href: "https://gamma.app/docs/Screenwriting-Masterclass-5rz4plzjsc0mvj0?mode=doc" },
 ];
 
 export default function Navigation() {
