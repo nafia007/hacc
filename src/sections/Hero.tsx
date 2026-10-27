@@ -69,7 +69,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12">
           {/* Left: Text */}
           <div className="max-w-2xl">
-            <motion.div
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
@@ -77,6 +77,26 @@ export default function Hero() {
             >
               Cape Town&apos;s festival at the intersection of African, Middle Eastern and Asian cinema,
               emerging technology, and global storytelling.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-6"
+            >
+              <a
+                href="https://www.quicket.co.za/events/357762-hollywood-african-cinema-connection/#/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <img
+                  src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
+                  alt="HACC Festival"
+                  className="h-12 w-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300"
+                />
+              </a>
             </motion.div>
 
             <motion.h1
