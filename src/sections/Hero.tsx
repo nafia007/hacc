@@ -92,25 +92,6 @@ export default function Hero() {
               <em className="text-gold italic">Connection</em>
             </motion.h1>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-6"
-            >
-              <a
-                href="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
-                  alt="HACC Festival Banner"
-                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300"
-                />
-              </a>
-            </motion.div>
-
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
