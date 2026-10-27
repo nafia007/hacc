@@ -89,11 +89,12 @@ export default function Hero() {
                 href="https://www.quicket.co.za/events/357762-hollywood-african-cinema-connection/#/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-block"
               >
                 <img
                   src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
                   alt="HACC Festival"
-                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300 w-[250px]"
+                  className="h-12 w-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300"
                 />
               </a>
             </motion.div>
