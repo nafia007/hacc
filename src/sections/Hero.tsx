@@ -93,7 +93,7 @@ export default function Hero() {
                 <img
                   src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
                   alt="HACC Festival"
-                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300 w-[320px]"
+                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300 w-[250px]"
                 />
               </a>
             </motion.div>
