@@ -72,11 +72,31 @@ export default function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-mono text-base sm:text-lg font-black tracking-[0.12em] uppercase text-gold mb-6"
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="mt-6 text-lg lg:text-xl text-muted max-w-[520px] leading-relaxed"
             >
-              Third Edition · 30th October<span className="sm:hidden"><br />to 2nd November 2026</span><span className="hidden sm:inline"> to 2nd November 2026</span>
+              Cape Town&apos;s festival at the intersection of African, Middle Eastern and Asian cinema,
+              emerging technology, and global storytelling.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="mt-6"
+            >
+              <a
+                href="https://www.quicket.co.za/events/357762-hollywood-african-cinema-connection/#/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
+                  alt="HACC Festival"
+                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300"
+                />
+              </a>
+            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -91,15 +111,24 @@ export default function Hero() {
               <em className="text-gold italic">Connection</em>
             </motion.h1>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-6 text-lg lg:text-xl text-muted max-w-[520px] leading-relaxed"
+              className="mt-6"
             >
-              Cape Town&apos;s festival at the intersection of African, Middle Eastern and Asian cinema,
-              emerging technology, and global storytelling.
-            </motion.p>
+              <a
+                href="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://skiy9cizul.ufs.sh/f/kOxGBlH1ZBglsOfvzKaYXiIhajsuc6vKLxNwZeW8o9dpn7gS"
+                  alt="HACC Festival Banner"
+                  className="max-w-full h-auto border border-gold/20 hover:border-gold/60 transition-colors duration-300"
+                />
+              </a>
+            </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
